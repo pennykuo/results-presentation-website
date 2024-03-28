@@ -2,7 +2,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/pictureBox.css">
+    <link rel="stylesheet" href="styles/teamsBox.css">
+
 </head>
 
 <body>
@@ -15,7 +18,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"> <a class="nav-link" href="#about">大綱</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#teams">My Teams</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#works">作品</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#pictures-box">作品</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#process">心路歷程</a></li>
                     <li class="nav-item"> <a class="nav-link" href="#publish">期末成果發表大綱</a></li>
                 </ul>
@@ -37,6 +40,7 @@
                 </div>
             </div>
             <div class="water">
+                <!-- 看要不要改getacLogo? -->
                 <div class="boat"><img class="boaticon" src="./image/bunny.png" />
                     <img class="water1"
                         src="https://lh3.googleusercontent.com/Xfrs5mopX1quqnjiuwhYWlLnZm3TaVLw_s6BiWSQyj-9RW6KKuYSEHlKcdKg8IWNqgNvO5QsN6qZYWbzrFRo3Uc4HMHSu10HevnzJcrqDn02IhUdp_7P433b8xdQWcALfHSg7dHmjQ=w1800" />
@@ -51,11 +55,10 @@
             <div class="top">
                 <div class="texts">
                     <h1>大綱</h1>
-                    <hr />
-                    <h2>My Teams</h2>
-                    <h2>作品</h2>
-                    <h2>心路歷程</h2>
-                    <h2>期末成果發表大綱</h2>
+                    <h2><li>My Teams</li></h2>
+                    <h2><li>作品</li></h2>
+                    <h2><li>心路歷程</li></h2>
+                    <h2><li>期末成果發表大綱</li></h2>
 
                 </div>
             </div>
@@ -66,8 +69,8 @@
             <div class="bottom">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 id="roname">My Teams</h3>
-                        <hr />
+                        <h class="teams-text">My Teams</h>
+                        <!-- <hr /> -->
                         <!-- cont inner start -->
                         <div class="cont s--inactive">
 
@@ -191,29 +194,89 @@
             </div>
         </div>
     </section>
-    <section id="works">
-        <h class="works-text">作品</h>
+    <section id="pictures-box">
+        <div class="container-fluid">
+            <div class="bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h class="pictureBox-text">作品</h>
+                        <!-- <hr /> -->
+                        <div class="Pictures-box">
+                            <figure class="Picture-wrap"><img class="Picture" src="image/work1.jpg" />
+                                <article class="Picture-description">
+                                    <div class="Picture-description-wrap">
+                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0" y="0"></rect>
+                                        </svg>
+                                        <h2 class="Picture-title">My Recipes</h2>
+                                        <p class="Picture-paragraph">how to use html</p>
 
-        <hr />
+                                    </div>
+                                </article>
+                            </figure>
+                            <figure class="Picture-wrap"><img class="Picture" src="image/work2.jpg" />
+                                <article class="Picture-description">
+                                    <div class="Picture-description-wrap">
+                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0" y="0"></rect>
+                                        </svg>
+                                        <h2 class="Picture-title">Animals</h2>
+                                        <p class="Picture-paragraph">how to use css and cut layout</p>
 
+                                    </div>
+                                </article>
+                            </figure>
+                            <figure class="Picture-wrap"><img class="Picture" src="image/work3.jpg" />
+                                <article class="Picture-description">
+                                    <div class="Picture-description-wrap">
+                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0" y="0"></rect>
+                                        </svg>
+                                        <h2 class="Picture-title">Rock-Paper-Scissors</h2>
+                                        <p class="Picture-paragraph">how to use javaScript</p>
 
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 work" v-for="work in works">
-                    <div class="workbox"><img src="" /></div><img :src="work.url" />
-                    <div class="text">{{ work.text }}</div>
+                                    </div>
+                                </article>
+                            </figure>
+                            <figure class="Picture-wrap"><img class="Picture" src="image/work5.jpg" />
+                                <article class="Picture-description">
+                                    <div class="Picture-description-wrap">
+                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0" y="0"></rect>
+                                        </svg>
+                                        <h2 class="Picture-title">calculator</h2>
+                                        <p class="Picture-paragraph">how to use javaScript and cut layout</p>F
+
+                                    </div>
+                                </article>
+                            </figure>
+                            <figure class="Picture-wrap"><img class="Picture" src="image/work4.jpg" />
+                                <article class="Picture-description">
+                                    <div class="Picture-description-wrap">
+                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0" y="0"></rect>
+                                        </svg>
+                                        <h2 class="Picture-title">CV-Generator</h2>
+                                        <p class="Picture-paragraph">how to use react</p>
+
+                                    </div>
+                                </article>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <section id="process">
         <div class="container-fluid">
             <div class="bottom">
                 <div class="row">
                     <div class="col-md-6">
                         <h class="process-text">心路歷程</h>
-                        <hr />
+                        <!-- <hr /> -->
                         <div class="process-content">
                             <p>還不知道要打什麼酷酷的話</p>
                             <p>還不知道要打什麼酷酷的話</p>
@@ -221,8 +284,8 @@
 
                         </div>
                         <!-- 圖片要改 -->
-                        <img class="roro"
-                            src="https://lh3.googleusercontent.com/bNzs1lKIJyMguFI61jWahvSQf96vq_iH_Ue8Hy9VcGDLOFr_3Ca4Xh4rnRWuLll3hRK43vOlwTgXS_m9tl8t1qdLJc80ZYqhWBfnameFokQF9eqgD-RfXJ2YyxPdkfrgpcj_lBkaPQ=w1800" />
+                        <!-- <img class="roro"
+                            src="https://lh3.googleusercontent.com/bNzs1lKIJyMguFI61jWahvSQf96vq_iH_Ue8Hy9VcGDLOFr_3Ca4Xh4rnRWuLll3hRK43vOlwTgXS_m9tl8t1qdLJc80ZYqhWBfnameFokQF9eqgD-RfXJ2YyxPdkfrgpcj_lBkaPQ=w1800" /> -->
 
                     </div>
                 </div>
@@ -235,16 +298,24 @@
                     <div class="row">
                         <div class="col-md-6">
                             <h class="publish-text">成果發表大綱</h>
-                            <hr />
+                            <!-- <hr /> -->
                             <div class="publish-content">
-                                <p>還不知道要打什麼酷酷的話</p>
-                                <p>還不知道要打什麼酷酷的話</p>
+                                <ul>
+                                    <li>引言</li>
+                                    <li>作品展示</li>
+                                    <li>技術簡介</li>
+                                    <li>團隊協作規範應用</li>
+                                    <li>未來展望</li>
+                                    <li>總結與感謝</li>
+                                    <li>問答環節</li>
+                                </ul>
+                                
                                 <div class="publish-content-arrow"></div>
 
                             </div>
                             <!-- 圖片要改 -->
-                            <img class="roro2"
-                                src="https://lh3.googleusercontent.com/bNzs1lKIJyMguFI61jWahvSQf96vq_iH_Ue8Hy9VcGDLOFr_3Ca4Xh4rnRWuLll3hRK43vOlwTgXS_m9tl8t1qdLJc80ZYqhWBfnameFokQF9eqgD-RfXJ2YyxPdkfrgpcj_lBkaPQ=w1800" />
+                            <!-- <img class="roro2"
+                                src="https://lh3.googleusercontent.com/bNzs1lKIJyMguFI61jWahvSQf96vq_iH_Ue8Hy9VcGDLOFr_3Ca4Xh4rnRWuLll3hRK43vOlwTgXS_m9tl8t1qdLJc80ZYqhWBfnameFokQF9eqgD-RfXJ2YyxPdkfrgpcj_lBkaPQ=w1800" /> -->
 
                         </div>
                     </div>
@@ -253,34 +324,13 @@
         </section>
         <footer id="footer">
             
-            <div class="container-fluid">
-                <div class="sky">
-                    <div class="clouds">
-                        <img class="cloud cloud1"
-                            src="https://lh3.googleusercontent.com/dtIyhWjPLwYVOFneZXB_ETqk2k1eRV21TURbfbwDRVWR22MvAu79Bn-IEZ4iqs5_3Ezt1LTozwsHEWMb9LdG3dPhZ981GuuUbilY7ccTqiRHeQvVwYunNAxDUe56q9BBOgZJG6uf4A=w1800" />
-                        <img class="cloud cloud2"
-                            src="https://lh3.googleusercontent.com/qLfbn9bTkP4CnNZRVfqgsfeIMJXZvwkHlZY7f2GyUxLAFBtCjXZGg7LIifu2rOsLbb1DEYyfrDBWrWYX2b9gF-o1qnI_iKKHY7-XzdaLO68vROQ59TH9RT_QCt87UKX_zr28bmPzsQ=w1800" />
-                        <img class="cloud cloud3"
-                            src="https://lh3.googleusercontent.com/mjPzfQP3slzUZINtA1OffrZnWke2kXlh50r2cQlY445E-t9Cy9PkMxVWRsw7fJnz6adS-sd7Dv1V6MNcTFrgcGBvBCHGt_IJcEl8CxAsniPOMYcwkT_owkGdq0yndovEBV9WmMynLQ=w1800" />
-                        <img class="cloud cloud4"
-                            src="https://lh3.googleusercontent.com/enbC-z4dckfNuOTRiXstuz1_Bax6Pt02WPZeLCuMsjRoqQoKE-Ys63uBBTDPUJKkzxJfJMPPIjBckh-x_wznqw4HkIoB8i3mFY8_2oY_B4-upebv-7TOPWRuyGjBizC8lwJkBdHLkQ=w1800" />
-                    </div>
-                </div>
-                <div class="water">
-                    <div class="boat"><img class="boaticon" src="./image/bunny.png" />
-                        <img class="water1"
-                            src="https://lh3.googleusercontent.com/Xfrs5mopX1quqnjiuwhYWlLnZm3TaVLw_s6BiWSQyj-9RW6KKuYSEHlKcdKg8IWNqgNvO5QsN6qZYWbzrFRo3Uc4HMHSu10HevnzJcrqDn02IhUdp_7P433b8xdQWcALfHSg7dHmjQ=w1800" />
-                        <img class="water2"
-                            src="https://lh3.googleusercontent.com/zudDjoLafTHnwikNDK7SVvomzVEA8CXpNGtUHySVrvSwfM0wmHEmteSA7QqSF6OYdQ-UUk9HDuOLbFm7AjAJ0WSNKON6vK9sq1sAzWvXrsEG46hCDxshE0_Q-lJNG7IhhUsNAi_twA=w12000" />
-                    </div>
-                </div>
-            </div>
 
         </footer>
-        <button class="spin-button" onclick="flipPage()">Spin me!</button>
+  
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="javaScript.js"></script>
+        <script src="teamsScript.js"></script>
 
 </body>
 
