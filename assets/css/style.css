@@ -10,11 +10,7 @@ h3 {
     letter-spacing: 1px;
 }
 
-h1 {
-    font-size: 40px;
-    letter-spacing: 1px;
-    color: rgb(53, 35, 212);
-}
+
 
 h2 {
     font-size: 25px;
@@ -26,11 +22,12 @@ a {
     text-decoration: none;
 }
 
-.pictureBox-text
-,.process-text
+
+.process-text
 ,.publish-text
  {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 40px;

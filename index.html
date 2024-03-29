@@ -1,336 +1,322 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/pictureBox.css">
-    <link rel="stylesheet" href="styles/teamsBox.css">
-
+	<title>Penny results presentation website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/teamsBox.css" />
+	<link rel="stylesheet" href="assets/css/pictureBox.css" />
+	<!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="navbar navbar-expand-sm fixed-top navbar-dark"><a class="navbar-brand" href="#index">Penny的期中報告</a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                aria-controls="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button> -->
-            <div class="collapse navbar-collapse flex-row-reverse" id="navbarToggler">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> <a class="nav-link" href="#about">大綱</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#teams">My Teams</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#pictures-box">作品</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#process">心路歷程</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#publish">期末成果發表大綱</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <header id="index">
-        <div class="container-fluid">
-            <div class="sky">
-                <div class="clouds">
-                    <img class="cloud cloud1"
-                        src="https://lh3.googleusercontent.com/dtIyhWjPLwYVOFneZXB_ETqk2k1eRV21TURbfbwDRVWR22MvAu79Bn-IEZ4iqs5_3Ezt1LTozwsHEWMb9LdG3dPhZ981GuuUbilY7ccTqiRHeQvVwYunNAxDUe56q9BBOgZJG6uf4A=w1800" />
-                    <img class="cloud cloud2"
-                        src="https://lh3.googleusercontent.com/qLfbn9bTkP4CnNZRVfqgsfeIMJXZvwkHlZY7f2GyUxLAFBtCjXZGg7LIifu2rOsLbb1DEYyfrDBWrWYX2b9gF-o1qnI_iKKHY7-XzdaLO68vROQ59TH9RT_QCt87UKX_zr28bmPzsQ=w1800" />
-                    <img class="cloud cloud3"
-                        src="https://lh3.googleusercontent.com/mjPzfQP3slzUZINtA1OffrZnWke2kXlh50r2cQlY445E-t9Cy9PkMxVWRsw7fJnz6adS-sd7Dv1V6MNcTFrgcGBvBCHGt_IJcEl8CxAsniPOMYcwkT_owkGdq0yndovEBV9WmMynLQ=w1800" />
-                    <img class="cloud cloud4"
-                        src="https://lh3.googleusercontent.com/enbC-z4dckfNuOTRiXstuz1_Bax6Pt02WPZeLCuMsjRoqQoKE-Ys63uBBTDPUJKkzxJfJMPPIjBckh-x_wznqw4HkIoB8i3mFY8_2oY_B4-upebv-7TOPWRuyGjBizC8lwJkBdHLkQ=w1800" />
-                </div>
-            </div>
-            <div class="water">
-                <!-- 看要不要改getacLogo? -->
-                <div class="boat"><img class="boaticon" src="./image/bunny.png" />
-                    <img class="water1"
-                        src="https://lh3.googleusercontent.com/Xfrs5mopX1quqnjiuwhYWlLnZm3TaVLw_s6BiWSQyj-9RW6KKuYSEHlKcdKg8IWNqgNvO5QsN6qZYWbzrFRo3Uc4HMHSu10HevnzJcrqDn02IhUdp_7P433b8xdQWcALfHSg7dHmjQ=w1800" />
-                    <img class="water2"
-                        src="https://lh3.googleusercontent.com/zudDjoLafTHnwikNDK7SVvomzVEA8CXpNGtUHySVrvSwfM0wmHEmteSA7QqSF6OYdQ-UUk9HDuOLbFm7AjAJ0WSNKON6vK9sq1sAzWvXrsEG46hCDxshE0_Q-lJNG7IhhUsNAi_twA=w12000" />
-                </div><a class="explore at_top" href="#about">EXPLORE</a>
-            </div>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container-fluid">
-            <div class="top">
-                <div class="texts">
-                    <h1>大綱</h1>
-                    <h2><li>My Teams</li></h2>
-                    <h2><li>作品</li></h2>
-                    <h2><li>心路歷程</li></h2>
-                    <h2><li>期末成果發表大綱</li></h2>
+<body class="is-preload">
 
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="teams">
-        <div class="container-fluid">
-            <div class="bottom">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h class="teams-text">My Teams</h>
-                        <!-- <hr /> -->
-                        <!-- cont inner start -->
-                        <div class="cont s--inactive">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-                            <div class="cont__inner">
-                                <!-- el start -->
-                                <div class="el">
-                                    <div class="el__overflow">
-                                        <div class="el__inner">
-                                            <div class="el__bg"></div>
-                                            <div class="el__preview-cont">
-                                                <h2 class="el__heading">Section 1</h2>
-                                            </div>
-                                            <div class="el__content">
-                                                <div class="el__text">Whatever</div>
-                                                <div class="el__close-btn"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="el__index">
-                                        <div class="el__index-back">1</div>
-                                        <div class="el__index-front">
-                                            <div class="el__index-overlay" data-index="1">1</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- el end -->
-                                <!-- el start -->
-                                <div class="el">
-                                    <div class="el__overflow">
-                                        <div class="el__inner">
-                                            <div class="el__bg"></div>
-                                            <div class="el__preview-cont">
-                                                <h2 class="el__heading">Section 2</h2>
-                                            </div>
-                                            <div class="el__content">
-                                                <div class="el__text">Whatever</div>
-                                                <div class="el__close-btn"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="el__index">
-                                        <div class="el__index-back">2</div>
-                                        <div class="el__index-front">
-                                            <div class="el__index-overlay" data-index="2">2</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- el end -->
-                                <!-- el start -->
-                                <div class="el">
-                                    <div class="el__overflow">
-                                        <div class="el__inner">
-                                            <div class="el__bg"></div>
-                                            <div class="el__preview-cont">
-                                                <h2 class="el__heading">Section 3</h2>
-                                            </div>
-                                            <div class="el__content">
-                                                <div class="el__text">Whatever</div>
-                                                <div class="el__close-btn"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="el__index">
-                                        <div class="el__index-back">3</div>
-                                        <div class="el__index-front">
-                                            <div class="el__index-overlay" data-index="3">3</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- el end -->
-                                <!-- el start -->
-                                <div class="el">
-                                    <div class="el__overflow">
-                                        <div class="el__inner">
-                                            <div class="el__bg"></div>
-                                            <div class="el__preview-cont">
-                                                <h2 class="el__heading">Section 4</h2>
-                                            </div>
-                                            <div class="el__content">
-                                                <div class="el__text">Whatever</div>
-                                                <div class="el__close-btn"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="el__index">
-                                        <div class="el__index-back">4</div>
-                                        <div class="el__index-front">
-                                            <div class="el__index-overlay" data-index="4">4</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- el end -->
-                                <!-- el start -->
-                                <div class="el">
-                                    <div class="el__overflow">
-                                        <div class="el__inner">
-                                            <div class="el__bg"></div>
-                                            <div class="el__preview-cont">
-                                                <h2 class="el__heading">Section 5</h2>
-                                            </div>
-                                            <div class="el__content">
-                                                <div class="el__text">Whatever</div>
-                                                <div class="el__close-btn"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="el__index">
-                                        <div class="el__index-back">5</div>
-                                        <div class="el__index-front">
-                                            <div class="el__index-overlay" data-index="5">5</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- el end -->
-                            </div>
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				Getac
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Penny期中報告</h1>
+					<!-- <p>這裡要寫酷酷的字</p> -->
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#VSBU">組織概況</a></li>
+					<li><a href="#teams">Teams</a></li>
+					<li><a href="#work">作品</a></li>
+					<li><a href="#process">心路歷程</a></li>
+					<li><a href="#publish">期末發表大綱</a></li>
+				</ul>
+			</nav>
+		</header>
 
-                        </div>
-                        <!-- cont inner end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="pictures-box">
-        <div class="container-fluid">
-            <div class="bottom">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h class="pictureBox-text">作品</h>
-                        <!-- <hr /> -->
-                        <div class="Pictures-box">
-                            <figure class="Picture-wrap"><img class="Picture" src="image/work1.jpg" />
-                                <article class="Picture-description">
-                                    <div class="Picture-description-wrap">
-                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="0" y="0"></rect>
-                                        </svg>
-                                        <h2 class="Picture-title">My Recipes</h2>
-                                        <p class="Picture-paragraph">how to use html</p>
+		<!-- Main -->
+		<div id="main">
+			<!-- 組織概況 -->
+			<article id="VSBU">
+				<h2 class="major">組織概況</h2>
+				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+				<div id="process-content">
+					<ul>
+						<li class="processText" style="animation-delay: 1s;"></li>
+						<li class="processText" style="animation-delay: 3s;"></li>
+						<li class="processText" style="animation-delay: 5s;"></li>
+						<li class="processText" style="animation-delay: 7s;"></li>
+					</ul>
+				</div>
+			</article>
+			<!-- teams -->
+			<article id="teams">
+				<!-- 
+				這裡我不確定是否要分成兩個部分寫(組織概況跟部門介紹) 
+					if(false){
+						將上面<li>VSBU註解;
+						return;
+					} 
+					不動;
+				-->
+				<h2 class="major">組織概況與部門介紹</h2>
+				<!-- cont inner start -->
+				<div class="cont s--inactive">
 
-                                    </div>
-                                </article>
-                            </figure>
-                            <figure class="Picture-wrap"><img class="Picture" src="image/work2.jpg" />
-                                <article class="Picture-description">
-                                    <div class="Picture-description-wrap">
-                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="0" y="0"></rect>
-                                        </svg>
-                                        <h2 class="Picture-title">Animals</h2>
-                                        <p class="Picture-paragraph">how to use css and cut layout</p>
+					<div class="cont__inner">
+						<!-- el start -->
+						<div class="el">
+							<div class="el__overflow">
+								<div class="el__inner">
+									<div class="el__bg"></div>
+									<div class="el__preview-cont">
+										<h2 class="el__heading">Section 1</h2>
+									</div>
+									<div class="el__content">
+										<div class="el__text">Whatever</div>
+										<div class="el__close-btn"></div>
+									</div>
+								</div>
+							</div>
+							<div class="el__index">
+								<div class="el__index-back">1</div>
+								<div class="el__index-front">
+									<div class="el__index-overlay" data-index="1">1</div>
+								</div>
+							</div>
+						</div>
+						<!-- el end -->
+						<!-- el start -->
+						<div class="el">
+							<div class="el__overflow">
+								<div class="el__inner">
+									<div class="el__bg"></div>
+									<div class="el__preview-cont">
+										<h2 class="el__heading">Section 2</h2>
+									</div>
+									<div class="el__content">
+										<div class="el__text">Whatever</div>
+										<div class="el__close-btn"></div>
+									</div>
+								</div>
+							</div>
+							<div class="el__index">
+								<div class="el__index-back">2</div>
+								<div class="el__index-front">
+									<div class="el__index-overlay" data-index="2">2</div>
+								</div>
+							</div>
+						</div>
+						<!-- el end -->
+						<!-- el start -->
+						<div class="el">
+							<div class="el__overflow">
+								<div class="el__inner">
+									<div class="el__bg"></div>
+									<div class="el__preview-cont">
+										<h2 class="el__heading">Section 3</h2>
+									</div>
+									<div class="el__content">
+										<div class="el__text">Whatever</div>
+										<div class="el__close-btn"></div>
+									</div>
+								</div>
+							</div>
+							<div class="el__index">
+								<div class="el__index-back">3</div>
+								<div class="el__index-front">
+									<div class="el__index-overlay" data-index="3">3</div>
+								</div>
+							</div>
+						</div>
+						<!-- el end -->
+						<!-- el start -->
+						<div class="el">
+							<div class="el__overflow">
+								<div class="el__inner">
+									<div class="el__bg"></div>
+									<div class="el__preview-cont">
+										<h2 class="el__heading">Section 4</h2>
+									</div>
+									<div class="el__content">
+										<div class="el__text">Whatever</div>
+										<div class="el__close-btn"></div>
+									</div>
+								</div>
+							</div>
+							<div class="el__index">
+								<div class="el__index-back">4</div>
+								<div class="el__index-front">
+									<div class="el__index-overlay" data-index="4">4</div>
+								</div>
+							</div>
+						</div>
+						<!-- el end -->
+						<!-- el start -->
+						<div class="el">
+							<div class="el__overflow">
+								<div class="el__inner">
+									<div class="el__bg"></div>
+									<div class="el__preview-cont">
+										<h2 class="el__heading">Section 5</h2>
+									</div>
+									<div class="el__content">
+										<div class="el__text">Whatever</div>
+										<div class="el__close-btn"></div>
+									</div>
+								</div>
+							</div>
+							<div class="el__index">
+								<div class="el__index-back">5</div>
+								<div class="el__index-front">
+									<div class="el__index-overlay" data-index="5">5</div>
+								</div>
+							</div>
+						</div>
+						<!-- el end -->
+					</div>
 
-                                    </div>
-                                </article>
-                            </figure>
-                            <figure class="Picture-wrap"><img class="Picture" src="image/work3.jpg" />
-                                <article class="Picture-description">
-                                    <div class="Picture-description-wrap">
-                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="0" y="0"></rect>
-                                        </svg>
-                                        <h2 class="Picture-title">Rock-Paper-Scissors</h2>
-                                        <p class="Picture-paragraph">how to use javaScript</p>
+				</div>
+			</article>
 
-                                    </div>
-                                </article>
-                            </figure>
-                            <figure class="Picture-wrap"><img class="Picture" src="image/work5.jpg" />
-                                <article class="Picture-description">
-                                    <div class="Picture-description-wrap">
-                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="0" y="0"></rect>
-                                        </svg>
-                                        <h2 class="Picture-title">calculator</h2>
-                                        <p class="Picture-paragraph">how to use javaScript and cut layout</p>F
+			<!-- Work -->
+			<article id="work">
+				<h2 class="major">作品</h2>
+				<div class="Pictures-box">
+					<figure class="Picture-wrap"><img class="Picture" src="images/work1.jpg" />
+						<div class="Picture-description">
+							<div class="Picture-description-wrap">
+								<svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0" y="0"></rect>
+								</svg>
+								<h2 class="Picture-title">My Recipes</h2>
+								<p class="Picture-paragraph">how to use html</p>
 
-                                    </div>
-                                </article>
-                            </figure>
-                            <figure class="Picture-wrap"><img class="Picture" src="image/work4.jpg" />
-                                <article class="Picture-description">
-                                    <div class="Picture-description-wrap">
-                                        <svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="0" y="0"></rect>
-                                        </svg>
-                                        <h2 class="Picture-title">CV-Generator</h2>
-                                        <p class="Picture-paragraph">how to use react</p>
+							</div>
+						</div>
+					</figure>
+					<figure class="Picture-wrap"><img class="Picture" src="images/work2.jpg" />
+						<div class="Picture-description">
+							<div class="Picture-description-wrap">
+								<svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0" y="0"></rect>
+								</svg>
+								<h2 class="Picture-title">Animals</h2>
+								<p class="Picture-paragraph">how to use css and cut layout</p>
 
-                                    </div>
-                                </article>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
+							</div>
+						</div>
+					</figure>
+					<figure class="Picture-wrap"><img class="Picture" src="images/work3.jpg" />
+						<div class="Picture-description">
+							<div class="Picture-description-wrap">
+								<svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0" y="0"></rect>
+								</svg>
+								<h2 class="Picture-title">Rock-Paper-Scissors</h2>
+								<p class="Picture-paragraph">how to use javaScript</p>
 
-            </div>
-        </div>
-    </section>
+							</div>
+						</div>
+					</figure>
+					<figure class="Picture-wrap"><img class="Picture" src="images/work5.jpg" />
+						<div class="Picture-description">
+							<div class="Picture-description-wrap">
+								<svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0" y="0"></rect>
+								</svg>
+								<h2 class="Picture-title">calculator</h2>
+								<p class="Picture-paragraph">how to use javaScript and cut layout</p>F
 
-    <section id="process">
-        <div class="container-fluid">
-            <div class="bottom">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h class="process-text">心路歷程</h>
-                        <!-- <hr /> -->
-                        <div class="process-content">
-                            <p>還不知道要打什麼酷酷的話</p>
-                            <p>還不知道要打什麼酷酷的話</p>
-                            <div class="process-content-arrow"></div>
+							</div>
+						</div>
+					</figure>
+					<figure class="Picture-wrap"><img class="Picture" src="images/work4.jpg" />
+						<div class="Picture-description">
+							<div class="Picture-description-wrap">
+								<svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0" y="0"></rect>
+								</svg>
+								<h2 class="Picture-title">CV-Generator</h2>
+								<p class="Picture-paragraph">how to use react</p>
 
-                        </div>
-                        <!-- 圖片要改 -->
-                        <!-- <img class="roro"
-                            src="https://lh3.googleusercontent.com/bNzs1lKIJyMguFI61jWahvSQf96vq_iH_Ue8Hy9VcGDLOFr_3Ca4Xh4rnRWuLll3hRK43vOlwTgXS_m9tl8t1qdLJc80ZYqhWBfnameFokQF9eqgD-RfXJ2YyxPdkfrgpcj_lBkaPQ=w1800" /> -->
+							</div>
+						</div>
+					</figure>
+					<figure class="Picture-wrap">
+						<div class="Picture-description">
+							<div class="Picture-description-wrap">
+								<svg class="Picture-border" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0" y="0"></rect>
+								</svg>
+								<h2 class="Picture-title">口頭敘述</h2>
+								<p class="Picture-paragraph">Do the something</p>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+							</div>
+						</div>
+					</figure>
+				</div>
+			</article>
 
-        <section id="publish">
-            <div class="container-fluid">
-                <div class="bottom">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h class="publish-text">成果發表大綱</h>
-                            <!-- <hr /> -->
-                            <div class="publish-content">
-                                <ul>
-                                    <li>引言</li>
-                                    <li>作品展示</li>
-                                    <li>技術簡介</li>
-                                    <li>團隊協作規範應用</li>
-                                    <li>未來展望</li>
-                                    <li>總結與感謝</li>
-                                    <li>問答環節</li>
-                                </ul>
-                                
-                                <div class="publish-content-arrow"></div>
+			<!-- process -->
+			<article id="process">
+				<h2 class="major">心路歷程</h2>
+				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+				<div id="process-content">
+					<ul>
+						<li class="processText" style="animation-delay: 1s;">適應</li>
+						<li class="processText" style="animation-delay: 3s;">學習及成長</li>
+						<li class="processText" style="animation-delay: 5s;">面對挑戰和克服困難</li>
+						<li class="processText" style="animation-delay: 7s;">最有成就感事件</li>
+					</ul>
+				</div>
+			</article>
 
-                            </div>
-                            <!-- 圖片要改 -->
-                            <!-- <img class="roro2"
-                                src="https://lh3.googleusercontent.com/bNzs1lKIJyMguFI61jWahvSQf96vq_iH_Ue8Hy9VcGDLOFr_3Ca4Xh4rnRWuLll3hRK43vOlwTgXS_m9tl8t1qdLJc80ZYqhWBfnameFokQF9eqgD-RfXJ2YyxPdkfrgpcj_lBkaPQ=w1800" /> -->
+			<!-- publish -->
+			<article id="publish">
+				<h2 class="major">期末成果發表大綱</h2>
+				<div id="publish-content">
+					<ul>
+						<li class="publishText" style="animation-delay: 0s;">引言</li>
+						<li class="publishText" style="animation-delay: 2s;">作品展示</li>
+						<li class="publishText" style="animation-delay: 4s;">技術簡介</li>
+						<li class="publishText" style="animation-delay: 6s;">團隊協作規範應用</li>
+						<li class="publishText" style="animation-delay: 8s;">未來展望</li>
+						<li class="publishText" style="animation-delay: 10s;">總結與感謝</li>
+						<li class="publishText" style="animation-delay: 12s;">Q&A</li>
+					</ul>
+				</div>
+			</article>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer id="footer">
-            
 
-        </footer>
-  
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="javaScript.js"></script>
-        <script src="teamsScript.js"></script>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/teamsScript.js"></script>
 
 </body>
 
