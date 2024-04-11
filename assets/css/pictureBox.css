@@ -6,7 +6,11 @@
   body {
     min-width: 240px;
   } */
-
+#NextButton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
 .Picture {
   display: block;
   position: absolute;
@@ -22,8 +26,17 @@
 .Pictures-box {
   font-size: 0;
   padding: 0.6666%;
+  display: flex;
+  
 }
+#Picture-content-1,#Picture-content-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 
+}
 .Picture-wrap {
   display: inline-block;
   position: relative;

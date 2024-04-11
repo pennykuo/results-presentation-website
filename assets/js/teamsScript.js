@@ -26,3 +26,20 @@ function flipPage(){
     document.body.classList.toggle('flipped');
     window.scrollTo(0, 0);
 }
+let isContent1Visible = true;
+
+document.getElementById('Picture-content-2').style.display = 'none';
+
+document.getElementById('myButton').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    if (isContent1Visible) {
+        document.getElementById('Picture-content-1').style.display = 'none';
+        document.getElementById('Picture-content-2').style.display = 'block';
+    } else {
+        document.getElementById('Picture-content-1').style.display = 'block';
+        document.getElementById('Picture-content-2').style.display = 'none';
+    }
+
+    isContent1Visible = !isContent1Visible;
+});
