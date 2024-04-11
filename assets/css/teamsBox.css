@@ -101,7 +101,8 @@ section#teams .bottom .col-md-6 .grass1 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 16.7%;
+  max-width: 16.67%;
+  width: 16.67%;
   height: 100%;
   background: #252525;
   transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
@@ -557,4 +558,69 @@ section#teams .bottom .col-md-6 .grass1 {
 .icon-link--twitter {
   left: auto;
   right: 5px;
+}
+
+@media (max-width: 768px) {
+  .el:nth-child(1) {
+    transform: translate3d(0%, 0, 0);
+    transform-origin: 50% 50%;
+  }
+
+  .el:nth-child(2) {
+    transform: translate3d(100%, 0, 0);
+    transform-origin: 150% 50%;
+  }
+
+  .el:nth-child(3) {
+    transform: translate3d(200%, 0, 0);
+    transform-origin: 250% 50%;
+  }
+
+  .el:nth-child(4) {
+    transform: translate3d(300%, 0, 0);
+    transform-origin: 350% 50%;
+  }
+
+  .el:nth-child(5) {
+    transform: translate3d(400%, 0, 0);
+    transform-origin: 450% 50%;
+  }
+
+  .el:nth-child(6) {
+    transform: translate3d(500%, 0, 0);
+    transform-origin: 550% 50%;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .el:nth-child(1) {
+    transform: translate3d(0%, 0, 0);
+    transform-origin: 50% 50%;
+  }
+
+  .el:nth-child(2) {
+    transform: translate3d(105.2083333333%, 0, 0);
+    transform-origin: 155.2083333333% 50%;
+  }
+
+  .el:nth-child(3) {
+    transform: translate3d(210.4166666667%, 0, 0);
+    transform-origin: 260.4166666667% 50%;
+  }
+
+  .el:nth-child(4) {
+    transform: translate3d(315.625%, 0, 0);
+    transform-origin: 365.625% 50%;
+  }
+
+  .el:nth-child(5) {
+    transform: translate3d(420.8333333333%, 0, 0);
+    transform-origin: 470.8333333333% 50%;
+  }
+
+  .el:nth-child(6) {
+    transform: translate3d(526.0416666667%, 0, 0);
+    transform-origin: 576.0416666667% 50%;
+  }
 }
