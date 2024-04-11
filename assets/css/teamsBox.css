@@ -393,7 +393,7 @@ section#teams .bottom .col-md-6 .grass1 {
 
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
-  background-image: url("/images/teams/getac-video.jpg");
+  background-image: url("../../images/teams/getac-video.jpg");
 }
 
 .el:nth-child(2) {
