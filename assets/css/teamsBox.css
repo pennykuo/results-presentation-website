@@ -417,7 +417,7 @@ section#teams .bottom .col-md-6 .grass1 {
 
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
-  background-image: url("/images/teams/getac-video.jpg");
+  background-image: url("../../images/teams/getac-video.jpg");
 }
 
 .el:nth-child(3) {
@@ -441,7 +441,7 @@ section#teams .bottom .col-md-6 .grass1 {
 
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
-  background-image: url("/images/teams/getac-video.jpg");
+  background-image: url("../../images/teams/getac-video.jpg");
 }
 
 .el:nth-child(4) {
@@ -465,7 +465,7 @@ section#teams .bottom .col-md-6 .grass1 {
 
 .el:nth-child(4) .el__bg:before {
   transition-delay: 0.3s;
-  background-image: url("/images/teams/getac-video.jpg");
+  background-image: url("../../images/teams/getac-video.jpg");
 }
 
 .el:nth-child(5) {
@@ -489,7 +489,7 @@ section#teams .bottom .col-md-6 .grass1 {
 
 .el:nth-child(5) .el__bg:before {
   transition-delay: 0.4s;
-  background-image: url("/images/teams/getac-video.jpg");
+  background-image: url("../../images/teams/getac-video.jpg");
 }
 
 .el:nth-child(5) {
@@ -512,7 +512,7 @@ section#teams .bottom .col-md-6 .grass1 {
 
 .el:nth-child(6) .el__bg:before {
   transition-delay: 0.4s;
-  background-image: url("/images/teams/getac-video.jpg");
+  background-image: url("../../images/teams/getac-video.jpg");
 }
 
 .cont.s--el-active .el:nth-child(6):not(.s--active) {
