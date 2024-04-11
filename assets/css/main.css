@@ -30,14 +30,14 @@
 	100% { transform: translateY(0); opacity: 1; }
 }
 
-.publishText {
+.publishText,.processText {
 	animation: falling 15s linear forwards;
 	opacity: 0;
 	margin: 20px 0;
 	font-size: 20px;
 	font-weight: 500;
 }
-#publish-content{
+#publish-content,#process-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -700,7 +700,11 @@ input, select, textarea {
 			border-radius: 4px;
 			display: block;
 		}
-
+		.image.main img {
+			width: 400px;
+			height: 400px;
+			object-fit: cover; 
+		}
 		.image.left, .image.right {
 			max-width: 40%;
 		}
