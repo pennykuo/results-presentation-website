@@ -6,6 +6,23 @@
 
 (function($) {
 
+	document.addEventListener('DOMContentLoaded', function() {
+		// 監聽特定鏈接的點擊事件
+		document.querySelector('a[href="#work"]').addEventListener('click', function(e) {
+			// e.preventDefault(); // 阻止默認跳轉行為
+			// 選擇要觸發 auto-hover 效果的元素
+			var targetElement = document.querySelector('#work .Picture-wrap');
+			setTimeout(function() {
+				var targetElement = document.querySelector('#work .Picture-wrap');
+				targetElement.classList.add('auto-hover');
+			}, 1000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
+			// 設定時間後移除 auto-hover 類來恢復正常狀態
+			setTimeout(function() {
+				targetElement.classList.remove('auto-hover');
+			}, 5000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
+		});
+	});
+
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
