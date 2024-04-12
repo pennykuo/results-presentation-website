@@ -19,10 +19,42 @@
 			// 設定時間後移除 auto-hover 類來恢復正常狀態
 			setTimeout(function() {
 				targetElement.classList.remove('auto-hover');
-			}, 6000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
+			}, 60000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
 		});
 	});
+	document.addEventListener('DOMContentLoaded', function() {
+		// 監聽特定鏈接的點擊事件
+		document.querySelector('a[href="#work2"]').addEventListener('click', function(e) {
+			// e.preventDefault(); // 阻止默認跳轉行為
+			// 選擇要觸發 auto-hover 效果的元素
+			var targetElement = document.querySelector('#work2 .Picture-wrap');
+			setTimeout(function() {
+				var targetElement = document.querySelector('#work2 .Picture-wrap');
+				targetElement.classList.add('auto-hover');
+			}, 2500); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
+			// 設定時間後移除 auto-hover 類來恢復正常狀態
+			setTimeout(function() {
+				targetElement.classList.remove('auto-hover');
+			}, 60000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
+		});
+	});
+	let currentContent = 1;
 
+	document.getElementById('Picture-content-2').style.display = 'none';
+	document.getElementById('Picture-content-3').style.display = 'none';
+	
+	document.getElementById('myButton').addEventListener('click', function(event) {
+		event.preventDefault();
+	
+		// Hide current content
+		document.getElementById(`Picture-content-${currentContent}`).style.display = 'none';
+	
+		// Update current content
+		currentContent = currentContent % 3 + 1;
+	
+		// Show new current content
+		document.getElementById(`Picture-content-${currentContent}`).style.display = 'block';
+	});
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),

@@ -26,20 +26,3 @@ function flipPage(){
     document.body.classList.toggle('flipped');
     window.scrollTo(0, 0);
 }
-let currentContent = 1;
-
-document.getElementById('Picture-content-2').style.display = 'none';
-document.getElementById('Picture-content-3').style.display = 'none';
-
-document.getElementById('myButton').addEventListener('click', function(event) {
-    event.preventDefault();
-
-    // Hide current content
-    document.getElementById(`Picture-content-${currentContent}`).style.display = 'none';
-
-    // Update current content
-    currentContent = currentContent % 3 + 1;
-
-    // Show new current content
-    document.getElementById(`Picture-content-${currentContent}`).style.display = 'block';
-});
