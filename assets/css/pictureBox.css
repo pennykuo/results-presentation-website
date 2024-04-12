@@ -266,6 +266,6 @@
   min-width: 100%;
 }
 
-.clickable-image {
+.clickable-image,.Picture-description {
   cursor: pointer;
 }
