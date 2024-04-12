@@ -15,11 +15,11 @@
 			setTimeout(function() {
 				var targetElement = document.querySelector('#work .Picture-wrap');
 				targetElement.classList.add('auto-hover');
-			}, 1000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
+			}, 2500); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
 			// 設定時間後移除 auto-hover 類來恢復正常狀態
 			setTimeout(function() {
 				targetElement.classList.remove('auto-hover');
-			}, 5000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
+			}, 6000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
 		});
 	});
 
