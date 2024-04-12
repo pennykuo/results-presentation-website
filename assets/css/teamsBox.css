@@ -559,7 +559,7 @@ section#teams .bottom .col-md-6 .grass1 {
   right: 5px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .el:nth-child(1) {
     transform: translate3d(0%, 0, 0);
     transform-origin: 50% 50%;
@@ -622,4 +622,29 @@ section#teams .bottom .col-md-6 .grass1 {
     transform: translate3d(526.0416666667%, 0, 0);
     transform-origin: 576.0416666667% 50%;
   }
+} */
+
+
+/* Getac image size */
+.el__inner .el__bg{
+  width: 1800px;
 }
+
+@media screen and (max-width: 1680px) {
+  .el__inner .el__bg{
+    width: 1300px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .el__inner .el__bg {
+      width: 1270px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .el__inner .el__bg {
+      width: 1100px;
+  }
+}
+/* Getac image size end*/
