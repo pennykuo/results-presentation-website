@@ -13,22 +13,33 @@
 #main.show {
 	display: block;
   }
-
-/* .bubble-background{
-	position: relative;
-	background-size: 100%;
-	min-height: 300px;
-	padding: 20px;
-	/* background-color: #87eafa; 
+#end{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
-.bubbles{
-	position:absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
+.end-major{
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
 	overflow: hidden;
-} */
+	border-right: .15em solid white;
+	white-space: nowrap;
+	/* margin:0 auto; */
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+}
+
+/* The typewriter cursor animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+}
 .bubble4{
 	position: absolute;
 	width: 100px;
@@ -105,6 +116,7 @@
 	justify-content: center;
 	align-items: center;
 	animation: move 3s infinite alternate;
+	
 }
 @keyframes move{
 	from{
@@ -119,13 +131,13 @@
     justify-content: space-between;
 }
 /* 文字掉落 */
-.processText {
-	animation: falling 10s linear forwards;
+/* .processText {
+	animation: falling 0.5s linear forwards;
 	opacity: 0;
 	margin: 20px 0;
 	font-size: 20px;
 	font-weight: 500;
-}
+} */
 @keyframes falling {
 	0% { transform: translateY(-100%); opacity: 0; }
 	50% { opacity: 1; }
@@ -133,7 +145,7 @@
 }
 
 .publishText,.processText {
-	animation: falling 15s linear forwards;
+	animation: falling 3s linear forwards;
 	opacity: 0;
 	margin: 20px 0;
 	font-size: 20px;

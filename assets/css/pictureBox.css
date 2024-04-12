@@ -35,7 +35,7 @@
   display: flex;
   
 }
-#Picture-content-1,#Picture-content-2,#intrduct-content{
+#Picture-content-1,#Picture-content-2,#Picture-content-3,#intrduct-content{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
