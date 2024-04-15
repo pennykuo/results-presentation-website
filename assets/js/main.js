@@ -60,7 +60,7 @@
 	document.getElementById('Picture-content-4').style.display = 'none';
 	document.getElementById('Picture-content-5').style.display = 'none';
 
-	document.getElementById('myButton').addEventListener('click', function(event) {
+	document.getElementById('myButton2').addEventListener('click', function(event) {
 		event.preventDefault();
 	
 		// Hide current content

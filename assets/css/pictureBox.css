@@ -11,6 +11,7 @@
   bottom: 10px;
   right: 10px;
 }
+
 .getacImg{
   width: 100%; 
   height: auto; 
@@ -228,7 +229,7 @@
 }
 .clickable-image{
   height: 100vh;
-object-fit: contain;
+  object-fit: contain;
 }
 .gif-grid{
   display: flex;
