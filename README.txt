@@ -28,3 +28,4 @@ Credits:
 	Other:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+參考資料：https://ithelp.ithome.com.tw/articles/10309187

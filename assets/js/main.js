@@ -38,11 +38,28 @@
 			}, 60000); // 這裏的 2000 表示 2000 毫秒後移除類，可以根據需要調整
 		});
 	});
+	let unitContent = 1;
+
+	document.getElementById('images-grid-2').style.display = 'none';
+	document.getElementById('myButton').addEventListener('click', function(event) {
+		event.preventDefault();
+	
+		// Hide current content
+		document.getElementById(`images-grid-${unitContent}`).style.display = 'none';
+	
+		// Update current content
+		unitContent = unitContent % 2 + 1;
+	
+		// Show new current content
+		document.getElementById(`images-grid-${unitContent}`).style.display = 'block';
+	});
 	let currentContent = 1;
 
 	document.getElementById('Picture-content-2').style.display = 'none';
 	document.getElementById('Picture-content-3').style.display = 'none';
-	
+	document.getElementById('Picture-content-4').style.display = 'none';
+	document.getElementById('Picture-content-5').style.display = 'none';
+
 	document.getElementById('myButton').addEventListener('click', function(event) {
 		event.preventDefault();
 	
@@ -50,7 +67,7 @@
 		document.getElementById(`Picture-content-${currentContent}`).style.display = 'none';
 	
 		// Update current content
-		currentContent = currentContent % 3 + 1;
+		currentContent = currentContent % 5 + 1;
 	
 		// Show new current content
 		document.getElementById(`Picture-content-${currentContent}`).style.display = 'block';
