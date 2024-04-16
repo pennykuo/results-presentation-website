@@ -56,34 +56,34 @@
 }
 
 @media (min-width: 1440px) {
-  .Picture-wrap {
+  .Picture-wrap,.introduce-wrap {
     width: 24%;
     margin: 0.5%;
   }
 }
 
 @media (min-width: 1023px) and (max-width: 1439px) {
-  .Picture-wrap {
+  .Picture-wrap,.introduce-wrap {
     width: 32%;
     margin: 0.5666%;
   }
 }
 
 @media (min-width: 519px) and (max-width: 1023px) {
-  .Picture-wrap {
+  .Picture-wrap,.introduce-wrap {
     width: 49%;
     margin: 0.5%;
   }
 }
 
 @media (max-width: 519px) {
-  .Picture-wrap {
+  .Picture-wrap,.introduce-wrap {
     width: 99%;
     margin: 0.5%;
   }
 }
 
-.Picture-wrap:before {
+.Picture-wrap:before,.introduce-wrap::before {
   display: block;
   padding-bottom: 100%;
   content: "";
